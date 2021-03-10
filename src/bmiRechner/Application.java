@@ -16,12 +16,11 @@ public class Application {
 				System.out.println("Gebe dein Körpergewicht in kg ein: ");
 				try {
 				gewicht = sc.nextDouble();
+				sc.nextLine();
 				tryAndError = false;
 				}catch(Exception e) {
 					System.out.println("Versuche es erneut. Fehlerhafte eingabe!");
 					tryAndError = true;
-					//Im Fehlerfall StdIn leerlesen
-					sc.nextLine();
 				}
 			}while(tryAndError);
 
@@ -30,12 +29,11 @@ public class Application {
 				System.out.println("Gebe deine Körpergröße in m an:");
 				try {
 					groesse = sc.nextDouble();
+					sc.nextLine();
 					tryAndError = false;
 				}catch(Exception e) {
 					System.out.println("Versuche es erneut. Fehlerhafte eingabe!");
 					tryAndError = true;
-					//Im Fehlerfall StdIn leer lesen
-					sc.nextLine();
 				}
 			}while(tryAndError);
 
@@ -77,7 +75,6 @@ public class Application {
 				}catch(Exception e) {
 					System.out.println("Fehler bein eingabe. Erneut eingeben");
 					tryAndError = true;
-					sc.nextLine();
 				}
 				
 			}while(tryAndError);
