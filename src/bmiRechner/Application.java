@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Application {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		GUI g = new GUI();
+	/*	Scanner sc = new Scanner(System.in);
 		boolean berechnen = false;
 		double gewicht = 0;
 		double groesse = 0;
@@ -38,7 +39,7 @@ public class Application {
 			}while(tryAndError);
 
 			// ergebnis ausgeben + Beurteilung
-			bmi = Application.calcBMI(gewicht, groesse);
+			bmi = BMI.calcBMI(gewicht, groesse);
 			
 			if(bmi < 15) {
 				System.out.println("Sehr ernsthaftes Untergewicht");
@@ -81,10 +82,10 @@ public class Application {
 
 		} while (berechnen);
 		sc.close();
-
+*/
 	}
 
-	public static double calcBMI(double kg, double m) {
-		return kg / (m * m);
-	}
+//	public static double calcBMI(double kg, double m) {
+//		return kg / (m * m);
+//	}
 }
